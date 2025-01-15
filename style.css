@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #fff; /* Optional background */
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0; /* Remove extra padding */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+    margin-left: auto; /* Push links to the right */
+    padding-right: 20px; /* Add padding to prevent links from touching the edge */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 3%;
+    text-align: left;
+}
+
+.center-content{
+    margin-top: 250px;
+}
+
+.center-content h1 {
+    font-size: 9rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.center-content p {
+    font-size: 3rem;
+    color: #555;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+
+.events-promo {
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Remove auto centering */
+    max-width: 400px;
+    height: 400px;
+    margin-top: 150px;
+    position: relative;
+    left: 3%; /* Adjust this value to control the left alignment */
+}
+  
+  .events-promo .content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .events-promo h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .events-promo p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .events-link {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .events-link:hover {
+    background-color: #000000;
+    color:#fff
+  }
+  
+  .link-icon {
+    margin-left: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-left: 40%;
+    margin-top: -380px;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(20px); /* For scroll animation */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.numbers.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.number-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.number-item h3 {
+    font-size: 4.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.number-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+.list-promo {
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Remove auto centering */
+    max-width: 400px;
+    height: 400px;
+    margin-top: 350px;
+    position: relative;
+    margin-left: 70%;
+    right: 3%; /* Adjust this value to control the left alignment */
+}
+
+.list-promo .content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .list-promo h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .list-promo p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .events-link {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .events-link:hover {
+    background-color: #000000;
+    color:#fff
+  }
+
+.leftnumber {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    margin-right: 40%;
+    margin-top: -380px;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(20px); /* For scroll animation */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.leftnumber.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.leftnumber-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.leftnumber-item h3 {
+    font-size: 4.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.leftnumber-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0 0;
+}
