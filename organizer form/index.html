@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="event_name">Event Name:</label><br>
+        <input type="text" id="event_name" name="event_name" required><br><br>
+
+        <label for="organizer_name">Organizer's Name:</label><br>
+        <input type="text" id="organizer_name" name="organizer_name" required><br><br>
+
+        <label for="organizer_contact">Contact Number:</label><br>
+        <input type="text" id="organizer_contact" name="organizer_contact" required><br><br>
+
+        <label for="organizer_email">Email:</label><br>
+        <input type="text" id="organizer_email" name="organizer_email" required><br><br>
+
+        <label for="event_start_date">Event Date :</label>
+        <input type="date" id="event_start_date" name="event_start_date" class="inline-date" required>
+        
+        <label for="event_end_date">Till - </label>
+        <input type="date" id="event_end_date" name="event_end_date" class="inline-date" required><br><br>
+
+        <label for="event_start_time">Event Time :</label>
+        <input type="time" id="event_start_time" name="event_start_time" class="inline-time" required>
+        
+        <label for="event_end_time">Till - </label>
+        <input type="time" id="event_end_time" name="event_end_time" class="inline-time" required><br><br>
+
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Ticket Categories:</label><br>
+        <div id="ticket-container">
+            <div class="ticket-category" draggable="true">
+                <span class="drag-handle">☰</span>
+                <input type="text" name="ticket_categories[]" placeholder="Category Name" required>
+                <input type="text" placeholder="Category Includes" required>
+                <input type="number" name="ticket_prices[]" placeholder="Price ($)" required>
+                <button type="button" class="delete-category">Delete</button>
+            </div>
+        </div><br><br>
+        <button type="button" id="add-category">Add Category</button><br><br>
+
+        <label for="file-upload">Upload Files:</label><br>
+        <input type="file" id="file-upload" name="files[]" multiple><br><br>
+        <div id="file-list"></div>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
