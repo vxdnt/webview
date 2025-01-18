@@ -1,8 +1,16 @@
-body {
+/* General Styles */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,17 +58,22 @@ header {
     color: #fff;
 }
 
+
+/* Main Section */
 main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding-left: 3%;
+    flex-direction: column;
     text-align: left;
+    padding-left: 3%;
+    padding-top: 120px; /* Adjusted for fixed header */
 }
 
-.center-content{
+/* Center Content */
+.center-content {
     margin-top: 250px;
+    text-align: left;
 }
 
 .center-content h1 {
@@ -76,39 +89,39 @@ main {
     margin-top: 10px;
 }
 
-
+/* Events Promo Section */
 .events-promo {
     padding: 10px 20px;
     text-align: left;
     border-radius: 10px;
     border: 1px solid #000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0; /* Remove auto centering */
+    margin: 20px 0;
     max-width: 400px;
     height: 400px;
     margin-top: 150px;
     position: relative;
-    left: 3%; /* Adjust this value to control the left alignment */
+    left: 6%;
 }
-  
-  .events-promo .content {
+
+.events-promo .content {
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .events-promo h2 {
+}
+
+.events-promo h2 {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #333;
-  }
-  
-  .events-promo p {
+}
+
+.events-promo p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
-  }
-  
-  .events-link {
+}
+
+.events-link {
     font-size: 1rem;
     color: #000000;
     text-decoration: none;
@@ -118,19 +131,20 @@ main {
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease;
-  }
-  
-  .events-link:hover {
+}
+
+.events-link:hover {
     background-color: #000000;
-    color:#fff
-  }
-  
-  .link-icon {
+    color: #fff;
+}
+
+.link-icon {
     margin-left: 8px;
     font-size: 1.2rem;
-  }
-  
-  .numbers {
+}
+
+/* Numbers Section */
+.numbers {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -140,8 +154,8 @@ main {
     max-width: 800px;
     margin-left: 40%;
     margin-top: -380px;
-    opacity: 0; /* Initially hidden for animation */
-    transform: translateY(20px); /* For scroll animation */
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -167,39 +181,40 @@ main {
     margin: 5px 0 0;
 }
 
+/* List Promo Section */
 .list-promo {
     padding: 10px 20px;
     text-align: left;
     border-radius: 10px;
     border: 1px solid #000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0; /* Remove auto centering */
+    margin: 20px 0;
     max-width: 400px;
     height: 400px;
     margin-top: 350px;
     position: relative;
     margin-left: 70%;
-    right: 3%; /* Adjust this value to control the left alignment */
+    right: 3%;
 }
 
 .list-promo .content {
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .list-promo h2 {
+}
+
+.list-promo h2 {
     font-size: 3rem;
     margin-bottom: 10px;
     color: #333;
-  }
-  
-  .list-promo p {
+}
+
+.list-promo p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
-  }
-  
-  .events-link {
+}
+
+.events-link {
     font-size: 1rem;
     color: #000000;
     text-decoration: none;
@@ -209,13 +224,14 @@ main {
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease;
-  }
-  
-  .events-link:hover {
-    background-color: #000000;
-    color:#fff
-  }
+}
 
+.events-link:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Left Number Section */
 .leftnumber {
     display: flex;
     justify-content: space-around;
@@ -226,8 +242,8 @@ main {
     max-width: 800px;
     margin-right: 40%;
     margin-top: -380px;
-    opacity: 0; /* Initially hidden for animation */
-    transform: translateY(20px); /* For scroll animation */
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -251,4 +267,50 @@ main {
     font-size: 1.2rem;
     color: #555;
     margin: 5px 0 0;
+}
+
+/* Footer Styles */
+.footer {
+    border-top: 1px solid #ccc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 300px;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagline {
+    font-size: 20px;
+    color: #333;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #fff;
 }
